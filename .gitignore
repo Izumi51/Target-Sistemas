@@ -1,0 +1,30 @@
+# ===== .NET =====
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+.vs/
+TestResults/
+*.trx
+*.coverage
+coverage*.xml
+
+# ===== Node / Angular =====
+node_modules/
+dist/
+.angular/
+.sass-cache/
+npm-debug.log*
+yarn-error.log*
+
+# ===== IDEs / SO =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+.DS_Store
+
+# ===== Dados gerados em runtime =====
+backend/data/runtime/
