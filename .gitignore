@@ -28,3 +28,6 @@ Thumbs.db
 
 # ===== Dados gerados em runtime =====
 backend/data/runtime/
+
+# ===== Else =====
+plano_desenvolvimento.md

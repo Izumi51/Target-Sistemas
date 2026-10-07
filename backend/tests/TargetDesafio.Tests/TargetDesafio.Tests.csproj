@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\src\TargetDesafio.Core\TargetDesafio.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\data\*.json" Link="data\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
