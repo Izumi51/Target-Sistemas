@@ -2,13 +2,6 @@ using TargetDesafio.Core.Estoque;
 
 namespace TargetDesafio.Tests.Estoque;
 
-/// <summary>Relógio fixo para testes determinísticos.</summary>
-internal sealed class RelogioFixo(DateTimeOffset agora) : TimeProvider
-{
-    public override DateTimeOffset GetUtcNow() => agora.ToUniversalTime();
-    public override TimeZoneInfo LocalTimeZone => TimeZoneInfo.Utc;
-}
-
 public class ServicoEstoqueTests
 {
     private static readonly DateTimeOffset Agora = new(2026, 10, 6, 15, 0, 0, TimeSpan.Zero);
