@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace TargetDesafio.Core.Estoque;
 
 /// <summary>
@@ -11,6 +13,7 @@ public sealed record Produto(int CodigoProduto, string DescricaoProduto, int Est
 /// <summary>
 /// Tipo da movimentação de estoque.
 /// </summary>
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum TipoMovimentacao
 {
     Entrada = 1,
